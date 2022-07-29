@@ -1,0 +1,121 @@
+@import url(style.css);
+
+.hero {
+    display: flex;
+    height: 26.25rem;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.right {
+    width: 50%;
+    position: relative;
+}
+
+.hero-btn {
+    font-size: 1.25rem;
+    width: 50%;
+}
+
+.hero-btn > i {
+    margin-left: 1.25rem;
+}
+
+.hero-scnd {
+    display: block;
+    width: 8.75rem;
+}
+
+.hero-scnd > i {
+    margin-left: .5rem;
+}
+
+#search {
+    height: 3.125rem;
+    width: 80%;
+    padding: 0rem 1rem;
+    font-size: 1.125rem;
+    font-weight: 300;
+    border: none;
+    border-radius: 0.125rem;
+    box-shadow: 0rem 0.625rem 2.1875rem rgba(0, 0, 0, .25);
+    margin: 2rem 0rem;
+}
+
+#search:focus {
+    outline: none;
+}
+
+#search-btn {
+    display: inline-block;
+    height: 3.125rem;
+    width: 3.125rem;
+    font-size: 1.125rem;
+    background-color: var(--green);
+    border: none;
+    border-radius: 0.125rem;
+    box-shadow: 0rem 0.625rem 2.1875rem rgba(0, 0, 0, .25);
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background-color: var(--dark-green);
+}
+
+.hero-img {
+    position: absolute;
+    right: 0;
+    z-index: -10;
+    background: url(../assets/img-hero.png) center no-repeat;
+    background-size: cover;
+    width: 130%;
+    height: 26.25rem;
+    border-radius: 0.125rem;
+}
+
+.card-feat {
+    position: absolute;
+    bottom: -15%;
+    right: 0;
+    margin-right: 1.5rem;
+    width: 16.875rem;
+    height: 9.0625rem;
+    background-color: white;
+    border-radius: 0.125rem;
+    box-shadow: 0rem 0.625rem 2.1875rem rgba(0, 0, 0, .25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.card-feat > div > h4 {
+    font-size: 1rem;
+    letter-spacing: -1%;
+}
+
+.profile-img-feat {
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 100%;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.1);
+}
+
+.type-title {
+    color: var(--grey);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.infos-feat {
+    display: flex;
+    gap: 0.625rem;
+}
