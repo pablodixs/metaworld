@@ -12,14 +12,24 @@
         <div class="container">
             <nav>
                 <a href=""><div id="logo"></div></a>
-                <ul id="menu">
-                    <a href=""><li>Explorar</li></a>
-                    <a href=""><li>Categorias</li></a>
-                    <a href=""><li>Trending</li></a>
-                    <a href=""><li>Carteira</li></a>
+                <ul id="menu">  
+                    <a class="discover" href="#"><li>Explorar</li></a>
+                    <a class="categories" href="#"><li>Categorias</li></a>
+                    <a class="trending" href="#"><li>Trending</li></a>
+                    <a class="walltet" href="#"><li>Carteira</li></a>
                 </ul>
-                <a href="" class="wallet-btn">Minha carteira</a>
+                <a href="#" class="wallet-btn">Minha carteira</a>
             </nav>
+            <div class="dropdown discover-drop hide">
+                <div class="container">
+                    <h1>Explorar</h1>
+                </div>
+            </div>
+            <div class="dropdown categories-drop hide">
+                <div class="container">
+                    <h1>Categorias</h1>
+                </div>
+            </div>
         </div>
     </header>
     <section class="container hero">
@@ -127,6 +137,8 @@
     <footer>
 
     </footer>
+    <div id="overflow" class="hide"></div>
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/6d13cd2cef.js" crossorigin="anonymous"></script>
 </body>
 </html>

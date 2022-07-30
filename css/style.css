@@ -171,7 +171,8 @@ h5 {
 
 /* Header */
 
-header {
+.header {
+    position: relative;
     border-top: 3px solid var(--green);
 }
 
@@ -217,11 +218,41 @@ nav  {
     background-color: var(--dark-green);
 }
 
+/* DROPDOW MENU */
 
+header .dropdown {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    height: 300px;
+    margin: auto;
+    z-index: 10;
+    transition: all 200ms;
+}
 
+.hide {
+    display: none;
+}
+
+#overflow {
+    position: absolute;
+    background-color: rgba(0,0,0, .3);
+    width: 100%;
+    height: 200vh;
+    top: 80px;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
 
 footer {
     margin-top: 5rem;
     width: 100%;
     height: 100px;
+}
+
+.bl-scroll {
+    overflow: hidden;
 }
